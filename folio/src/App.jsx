@@ -8,7 +8,7 @@ import "./style.css";
 
 function App() {
     return (
-        <>
+        <div className="appGrid">
             <Routes>
                 <Route path="/" element={<SharedLayout />}>
                     <Route index element={<Projects />} />
@@ -18,7 +18,7 @@ function App() {
                     <Route path="*" />
                 </Route>
             </Routes>
-        </>
+        </div>
     );
 }
 
