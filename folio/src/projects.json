@@ -7,7 +7,8 @@
             "style" : "css",
             "language" : "react",
             "id" : 2,
-            "url" : "https://valorant-agents-six.vercel.app/"
+            "url" : "https://valorant-agents-six.vercel.app/",
+            "api" : "api"
         },
         {
             "name" : "photograpy",
@@ -16,7 +17,9 @@
             "style" : "css",
             "language" : "javascript",
             "id" : 3,
-            "url" : "https://photography-web-bt6u.vercel.app/"
+            "url" : "https://photography-web-bt6u.vercel.app/",
+            "animation" : "gsap"
+
         },
         {
             "name" : "nasa apod",
@@ -25,7 +28,8 @@
             "style" : "css",
             "language" : "react",
             "id" : 5,
-            "url" : "https://nasa-apod-iota.vercel.app/"
+            "url" : "https://nasa-apod-iota.vercel.app/",
+            "api" : "api"
         },
         {
             "name" : "jettistore",
@@ -35,6 +39,7 @@
             "language" : "javascript",
             "id" : 1,
             "url" : "https://vercel.com/jettiso/jettison-clothing-store"
+
         },
         
         {
@@ -45,6 +50,7 @@
             "language" : "javascript",
             "id" : 4,
             "url" : "https://interiordesign-portfolio.vercel.app/"
+
         }
         
     ]

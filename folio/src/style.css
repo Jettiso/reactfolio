@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400&family=Roboto+Mono:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400&family=Roboto+Mono:wght@500&display=swap");
 /* ============================== CUSTOM FONTS ============================== */
 
 @font-face {
-    font-family: 'Valorant';
-    src: url('/valo.ttf');
+    font-family: "Valorant";
+    src: url("/valo.ttf");
 }
 @font-face {
-    font-family: 'NoizeSport';
-    src: url('/noizesport.ttf');
+    font-family: "NoizeSport";
+    src: url("/noizesport.ttf");
 }
 /* ============================== RESET ============================== */
 
@@ -26,7 +26,6 @@ a {
 }
 
 li {
-    
     list-style-type: none;
     text-transform: uppercase;
 }
@@ -36,21 +35,20 @@ img {
     height: auto;
     object-fit: cover;
 }
-
+/* ROOT VARIABLES */
 :root {
     --name: #fa4454;
     --background-color: #000000;
-    --font-dev: 'Valorant';
-    --hover-state: 	#FCEE0C;
+    --font-dev: "Valorant";
+    --hover-state: #fcee0c;
     --font: #f2f2f2;
 }
-
 
 .link {
     color: var(--font);
     text-transform: uppercase;
     margin-left: 2rem;
-    font-family: 'NoizeSport';
+    font-family: "NoizeSport";
 }
 
 /* .active {
@@ -59,15 +57,14 @@ img {
 
 .link:hover {
     cursor: pointer;
-    
 }
 /* ============================== APP LAYOUT ============================== */
 .appGrid {
     grid-template-areas:
-    "navbar navbar navbar"
-    "main main main"
-    "footer footer footer";
-    max-width: 1000px;
+        "navbar navbar navbar"
+        "main main main"
+        "footer footer footer";
+    max-width: 1100px;
     margin: 0 auto;
 }
 /* ============================== NAVBAR ============================== */
@@ -86,9 +83,15 @@ img {
 .navbar .dev {
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: 'Valorant';
+    font-family: "Valorant";
     color: var(--name);
     transform: skew(-15deg);
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ============================== PROJECTS ============================== */
 
@@ -97,12 +100,14 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 4rem 1.5rem;
+    row-gap: 3rem;
 }
 
 .img__wrapper {
-    max-width: 350px;
+    max-width: 100%;
     transition: all 100ms ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.527);
+    margin-bottom: 1rem;
 }
 
 .img__wrapper:hover {
@@ -111,6 +116,21 @@ img {
 
 .img__wrapper h1 {
     color: var(--font);
+}
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 400px;
+}
+
+.project__container h1 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--name);
 }
 
 .project__container h2 {
@@ -122,17 +142,28 @@ img {
 .project__container span {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
 }
 
 .project__container span h3 {
     color: var(--font);
     border: 2px solid rgba(255, 255, 255, 0.356);
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 10px;
-    font-family: 'Roboto', monospace;
+    font-family: "Roboto", monospace;
     text-transform: uppercase;
 }
+
+.tech__stack {
+    display: flex;
+    
+}
+
+.tech__stack span {
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
 /* ============================== FOOTER ============================== */
 
 footer {
@@ -141,13 +172,17 @@ footer {
     justify-content: space-between;
     grid-area: footer;
     color: var(--font);
-    padding: 1.5rem
+    padding: 1.5rem;
 }
 
 .fa-brands {
     color: white;
     margin-right: 1rem;
     font-size: 1.5rem;
+}
+
+.fa-brands:hover {
+    color: var(--name);
 }
 
 .line-space {
@@ -161,32 +196,69 @@ footer {
 }
 
 footer p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 footer p .dev__footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: var(--font);
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     color: var(--name);
 }
 
 .about__section {
+    justify-content: space-between;
+    align-items: center;
     padding: 2rem;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     max-height: 100vh;
+    margin-bottom: 5rem;
 }
 
 .about__section p {
     max-width: 40ch;
     margin-bottom: 4rem;
     font-size: 1.5rem;
+    line-height: 2.2rem;
 }
 
 .about__section p:first-child {
     margin-top: 5rem;
+}
+.about__me span {
+    color: var(--name);text-transform: uppercase;
+}
+
+.about__tech {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    place-self: end;
+    max-width: 400px;
+    margin-right: auto;
+}
+
+.about__tech h1 {
+    color: var(--name);
+    text-transform: capitalize;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+
+.tech {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
+.tech h2 {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
 }
 
 .contact__section {
@@ -197,18 +269,149 @@ footer p .dev__footer {
     padding: 2rem;
 }
 .contact__section h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--font);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 4rem 0;
 }
 
-.contact__links {
-    display: inline;
-    margin: 1rem;
+.contact__section h1 span {
+    color: var(--name);
 }
 
-.largeIcon {
-    font-size: 3rem;
-    margin: 1rem;
+.contact {
+    display: flex;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: var(--font);
+    font-family: 'Poppins', sans-serif;
+    margin: 1.5rem;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* ============================== CUSTOM SCROLLBAR ============================== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+/* ============================== MEDIA QUERIES ============================== */
+@media screen and (max-width: 700px) {
+    /* ========================= NAVIGATION */
+    .nav__links {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background-color);
+        right: 0;
+        left: 0;
+        top: 0;
+        transform: translateY(-100vh);
+        transition: all 250ms ease;
+    }
+    .nav__links ul {
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav__links.responsive-nav {
+        transform: none;
+    }
+    .img__wrapper {
+        max-width: 100%;
+        transition: all 100ms ease-in-out;
+    }
+    .fa-bars {
+        color: white;
+        align-self: center;
+        font-size: 2rem;
+        transform: translateY(-5px);
+    }
+    a.link {
+        margin: 2rem;
+        font-size: 2rem;
+        color: var(--name);
+    }
+    
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: block;
+        z-index: 99;
+    }
+    .hamburger.is-active {
+        top: 20px;
+        position: fixed;
+        right: 25px;
+    }
+    .contact__section h1 {
+        font-size: 2.2rem;
+    }
+    .about__section {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer__contacts {
+        margin-bottom: 1.5rem;
+    }
 }

@@ -3,29 +3,10 @@ import "../style.css";
 const Contacts = () => {
     return (
         <div className="contact__section">
-            <h1>Want to develop something amazing together?</h1>
-            <div className="contact__links">
-                <a
-                    href="https://github.com/Jettiso"
-                    target="_blank"
-                    rel="noferrer"
-                >
-                    <i class="fa-brands fa-github largeIcon"></i>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/joshua-earl-tongson-654660216/"
-                    target="_blank"
-                    rel="noferrer"
-                >
-                    <i class="fa-brands fa-linkedin largeIcon"></i>
-                </a>
-                <a
-                    href="https://www.facebook.com/paxajj/"
-                    target="_blank"
-                    rel="noferrer"
-                >
-                    <i class="fa-brands fa-facebook-messenger largeIcon"></i>
-                </a>
+            <h1>Want to <span>develop</span> something amazing <span>together</span> ?</h1>
+            <div className="contact">
+                <h2>+639925210791</h2>
+                <h2>jettisonjj@gmail.com</h2>
             </div>
         </div>
     );
