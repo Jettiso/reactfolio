@@ -281,13 +281,16 @@ footer p .dev__footer {
 
 .contact {
     display: flex;
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 .contact h2 {
     font-size: 2rem;
     color: var(--font);
     font-family: 'Poppins', sans-serif;
-    margin: 1.5rem;
+    
+    margin-bottom: 1rem;
 
 }
 
@@ -413,5 +416,8 @@ footer p .dev__footer {
     }
     .footer__contacts {
         margin-bottom: 1.5rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
     }
 }
