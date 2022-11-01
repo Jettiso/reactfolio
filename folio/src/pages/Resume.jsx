@@ -1,9 +1,10 @@
 import "../style.css";
+import { pdf } from '../img/resume.pdf';
 
 const Resume = () => {
     return (
         <>
-            <h1>Resume page</h1>
+            <a href={pdf} download> Download PDF</a>
         </>
     );
 };

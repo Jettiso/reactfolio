@@ -1,0 +1,58 @@
+{
+    "projects" : [
+        {
+            "name" : "valorant",
+            "imgUrl" : "https://images2.imgbox.com/18/a9/f9f47hqy_o.png",
+            "markup" : "html",
+            "style" : "css",
+            "language" : "react",
+            "id" : 2,
+            "url" : "https://valorant-agents-six.vercel.app/",
+            "api" : "api"
+        },
+        {
+            "name" : "photograpy",
+            "imgUrl" : "https://images2.imgbox.com/11/e4/Y54FKwWT_o.jpg",
+            "markup" : "html",
+            "style" : "css",
+            "language" : "javascript",
+            "id" : 3,
+            "url" : "https://photography-web-bt6u.vercel.app/",
+            "animation" : "gsap"
+
+        },
+        {
+            "name" : "nasa apod",
+            "imgUrl" : "https://images2.imgbox.com/a9/2d/1ZUTtxEf_o.jpg",
+            "markup" : "html",
+            "style" : "css",
+            "language" : "react",
+            "id" : 5,
+            "url" : "https://nasa-apod-iota.vercel.app/",
+            "api" : "api"
+        },
+        {
+            "name" : "jettistore",
+            "imgUrl" : "https://images2.imgbox.com/52/eb/kpBG0ATn_o.jpg",
+            "markup" : "html",
+            "style" : "css",
+            "language" : "javascript",
+            "id" : 1,
+            "url" : "https://vercel.com/jettiso/jettison-clothing-store"
+
+        },
+        
+        {
+            "name" : "interior",
+            "imgUrl" : "https://images2.imgbox.com/1c/cc/EDbnh4YE_o.jpg",
+            "markup" : "html",
+            "style" : "sass",
+            "language" : "javascript",
+            "id" : 4,
+            "url" : "https://interiordesign-portfolio.vercel.app/"
+
+        }
+        
+    ]
+}
+
